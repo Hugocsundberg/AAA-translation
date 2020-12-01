@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 101vh;
+    width: 100vw;
+    background-color: #beccd5;
+    animation: colorAnimation 30s infinite;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+// .text {
+//     font-size: 100px;
+//     margin: 0px;
+//     animation: textAnimation 50s linear infinite, textSkewAnimation 2s infinite;
+// }
+
+@keyframes textAnimation {
+    0%{margin-left: 0px;}
+    100%{margin-left: -5000px;}
+}
+
+.aaText, .normalText {
+    padding: 20px;
+    height: 28%;
+    width: 80%;
+    color: white;
+    text-shadow: 0 0 10px white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(145deg, #cbdae4, #abb8c0);
+    box-shadow:  20px 20px 60px #b1bec6, 
+    -20px -20px 60px #cbdae4;
+    animation: colorAnimation 30s infinite both;
+    // overflow: hidden;
+}
+
+#infobutton {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(44, 44, 44);
+    // animation: pulsing 1.8s infinite both;
+    position: absolute;
+    top: 9%;
+    right: 3%;
+    border-radius: 50%;
+    }
+
+#infobutton h2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    margin: 0;
+    font-size: 22px;
+    z-index: 600;
+}
+
+@keyframes pulsing {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+#infoscreen {
+    border-radius: 0 20px 20px 0;
+    background-color: rgba(46, 46, 46, 0.726);
+    position: absolute;
+    left: -500px;
+    color: black;
+    z-index: 100;
+}
+
+#infoscreen p {
+    color: rgb(235, 235, 235);
+    position: relative;
+    top: 0px;
+    margin: 20px;
+    left: 0px;
+    font-size: 18px;
+}
+
+@keyframes comein {
+    from{transform: translate(0,0);}
+    to{transform: translate(500px ,0);}
+}
+
+@keyframes goout {
+    from{transform: translate(500px,0);}
+    to{transform: translate(0 ,0);}
+}
+
+.comein {
+    animation: comein .5s forwards;
+}
+
+.goout {
+    animation: goout .5s forwards;
+}
+
+
+
+@keyframes colorAnimation {
+    0% {
+        background: #4e6d74;
+box-shadow:  9px 9px 18px #374c51, 
+             -9px -9px 18px #658e97;
+    }
+    25% {
+        background: #aa4b4b;
+box-shadow:  9px 9px 18px #773535, 
+             -9px -9px 18px #dd6262;}
+    50% {
+        background: #a23f94;
+box-shadow:  9px 9px 18px #712c68, 
+             -9px -9px 18px #d352c0;;
+            }
+    75% {
+        
+        background: #4a7354;
+box-shadow:  9px 9px 18px #34513b, 
+             -9px -9px 18px #60966d;;
+    }
+    100% {
+        
+        
+        background: #4e6d74;
+box-shadow:  9px 9px 18px #374c51, 
+             -9px -9px 18px #658e97;
+    }
+}
+
+@keyframes colorTextAnimation {
+    0% {
+        
+        color: #3b3b3d;
+    }
+    25% {
+        color: #2b3a51;
+    }
+    50% {
+        color: #462647;
+            }
+    75% {
+        
+        color: #26472a;
+    }
+    100% {
+        
+        
+        color: #434344;
+    }
+}
+
+@keyframes textSkewAnimation {
+    0% {transform: skewX(0deg);}
+    50% {transform: skewX(20deg);}
+    100% {transform: skewX(0deg);}
+}
+
+
+
+.centerContainer {
+    height: calc(100% - 132.8px);
+    position: relative;
+}
+
+.button {
+    height: 6%;
+    width: 18vh;
+    background-color: gray;
+    position: absolute;    
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    background: #beccd5;
+    box-shadow:  20px 20px 60px #7a8388, 
+    -20px -20px 60px #ffffff;
+    animation: colorAnimation 30s infinite both;
+        p {
+            color: white;
+            text-shadow: 0 0 10px white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 7%;
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100%;
+            font-size: 14px;
+            height: 7%;
+            // animation: colorTextAnimation 10s infinite both;
+
+        }
+
+}
+
+.button1 {
+    top: 33%;
+    z-index: 50;
+   
+}
+
+.button2 {
+    top: 73%;
+}
+
+.button3 {
+    top: 88%;
+    width: 35vh;
+    height: 7%;
+    p {
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        height: 7%;
+        color: rgb(255, 32, 32);    
+        animation: none;
+        text-shadow: rgb(143, 4, 4) 0 0 4px;
+        font-weight: 900;
+        letter-spacing: .1em;
+        line-height: 7%;
+        
+    }
+}
+
+.placeholderText {
+    position: absolute;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.616);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.623);
+    left: 50%;
+    transform: translate(-50%);
+    pointer-events: none;
+    font-weight: lighter;
+
+}
+
+.placeholderNormal {
+top: 10%
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.placeholderAa {
+    top: 50%;
+    z-index: 50;
+}
+
+
+
+.normalText {
+top: 8%;
+
+}
+
+.aaText {
+top: 48%;
+}
