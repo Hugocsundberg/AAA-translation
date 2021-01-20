@@ -6,7 +6,7 @@ const normalTextDOMbox = document.querySelector(".normalText")
 const updateNormalText = (e) => {
     if(translateTo == "normal") {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "translateToNormal.php", true);
+        xmlhttp.open("POST", "dist/translateToNormal.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 || this.status === 200){ 
@@ -25,7 +25,7 @@ const updateAaText = (e) => {
     
     if(translateTo == "Aa") {
         var xmlhttpAa = new XMLHttpRequest();
-        xmlhttpAa.open("POST", "translateToAa.php", true);
+        xmlhttpAa.open("POST", "dist/translateToAa.php", true);
         xmlhttpAa.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttpAa.onreadystatechange = function() {
             if (this.readyState === 4 || this.status === 200){ 
@@ -55,14 +55,6 @@ const updatePlaceholders = () => {
         }    
     }, 5);
 }
-
-
-// window.addEventListener("keydown", updatePlaceholders)
-// window.addEventListener("keydown", updateNormalText)
-// window.addEventListener("keydown", updateAaText)
-
-
-
 
 let translateTo
 
@@ -144,46 +136,9 @@ button3.addEventListener("click", () => {
     }, 5000);
 })
 
-//Mobile
-// button1.addEventListener("touchstart", () => {
-//     window.navigator.clipboard.writeText(normalTextDOMbox.value)
-//     button1.children[0].innerHTML="Text copied"
-//     setTimeout(() => {
-//         button1.children[0].innerHTML="COPY"
-//     }, 5000);
-// })
-// button2.addEventListener("touchstart", () => {
-//     window.navigator.clipboard.writeText(aaTextDOMbox.value)
-//     button2.children[0].innerHTML="Text copied"
-//     setTimeout(() => {
-//         button2.children[0].innerHTML="COPY"
-//     }, 5000);
-// })
-
-// button3.addEventListener("click", () => {
-//     normalTextDOMbox.value = ""
-//     aaTextDOMbox.value = ""
-//     button3.children[0].innerHTML="Text cleared"
-//     setTimeout(() => {
-//         button3.children[0].innerHTML="CLEAR ALL"
-//     }, 5000);
-// })
 let info = false
 const infoButton = document.querySelector("#infobutton")
 const infoScreen = document.querySelector("#infoscreen")
-
-// infoButton.addEventListener("touchstart", () => {
-//     if (info == false) {
-//         info = true;
-//         infoscreen.classList.remove("goout");
-//         infoscreen.classList.add("comein");
-//     } else {
-//         info = false; 
-//         infoscreen.classList.remove("comein");
-//         infoscreen.classList.add("goout");
-//     }
-        
-//     })
 
 infoButton.addEventListener("click", () => {
 if (info == false) {
