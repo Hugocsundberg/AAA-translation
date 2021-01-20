@@ -6,7 +6,7 @@ const normalTextDOMbox = document.querySelector(".normalText")
 const updateNormalText = (e) => {
     if(translateTo == "normal") {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "/AAAAAAAAAAAAAAAAA/translateToNormal.php", true);
+        xmlhttp.open("POST", "translateToNormal.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttp.onreadystatechange = function() {
             if (this.readyState === 4 || this.status === 200){ 
@@ -25,7 +25,7 @@ const updateAaText = (e) => {
     
     if(translateTo == "Aa") {
         var xmlhttpAa = new XMLHttpRequest();
-        xmlhttpAa.open("POST", "/AAAAAAAAAAAAAAAAA/translateToAa.php", true);
+        xmlhttpAa.open("POST", "translateToAa.php", true);
         xmlhttpAa.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttpAa.onreadystatechange = function() {
             if (this.readyState === 4 || this.status === 200){ 
