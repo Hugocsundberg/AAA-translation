@@ -5,4 +5,4 @@ An app that translates text into a string of upper and lower case 'A'. Upper cas
 Tha app uses regex server-side to translate the input. I originally wanted to do the translation on the frontend for performance-reasons but realized that safari didnt have full support for regex so decided to translate server-side for compatibility. 
 
 Live site: https://aaa-translator.herokuapp.com/
-![alt text]()
+![alt text](https://github.com/Hugocsundberg/AAA-translation/blob/main/Screenshot%202021-01-20%20at%2023.33.19.png)
