@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap");
-
 html,
 body {
   margin: 0;
@@ -17,12 +16,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-// .text {
-//     font-size: 100px;
-//     margin: 0px;
-//     animation: textAnimation 50s linear infinite, textSkewAnimation 2s infinite;
-// }
-
 @keyframes textAnimation {
   0% {
     margin-left: 0px;
@@ -31,7 +24,6 @@ body {
     margin-left: -5000px;
   }
 }
-
 .aaText,
 .normalText {
   padding: 20px;
@@ -49,25 +41,27 @@ body {
   background: linear-gradient(145deg, #cbdae4, #abb8c0);
   box-shadow: 20px 20px 60px #b1bec6, -20px -20px 60px #cbdae4;
   animation: colorAnimation 30s infinite both;
-  // overflow: hidden;
 }
 
 #infobutton {
   height: 40px;
   width: 40px;
-  background-color: rgb(44, 44, 44);
-  // animation: pulsing 1.8s infinite both;
+  background-color: #2c2c2c;
   position: absolute;
   top: 9%;
   right: 3%;
   border-radius: 50%;
 }
 
+#infobutton:hover {
+  cursor: pointer;
+}
+
 #infobutton h2 {
   position: relative;
   width: 100%;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: white;
   line-height: 40px;
   margin: 0;
   font-size: 22px;
@@ -85,7 +79,6 @@ body {
     transform: scale(1);
   }
 }
-
 #infoscreen {
   border-radius: 0 20px 20px 0;
   background-color: rgba(46, 46, 46, 0.726);
@@ -96,7 +89,7 @@ body {
 }
 
 #infoscreen p {
-  color: rgb(235, 235, 235);
+  color: #ebebeb;
   position: relative;
   top: 0px;
   margin: 20px;
@@ -112,7 +105,6 @@ body {
     transform: translate(500px, 0);
   }
 }
-
 @keyframes goout {
   from {
     transform: translate(500px, 0);
@@ -121,7 +113,6 @@ body {
     transform: translate(0, 0);
   }
 }
-
 .comein {
   animation: comein 0.5s forwards;
 }
@@ -152,7 +143,6 @@ body {
     box-shadow: 9px 9px 18px #374c51, -9px -9px 18px #658e97;
   }
 }
-
 @keyframes colorTextAnimation {
   0% {
     color: #3b3b3d;
@@ -170,7 +160,6 @@ body {
     color: #434344;
   }
 }
-
 @keyframes textSkewAnimation {
   0% {
     transform: skewX(0deg);
@@ -182,7 +171,6 @@ body {
     transform: skewX(0deg);
   }
 }
-
 .centerContainer {
   height: calc(100% - 132.8px);
   position: relative;
@@ -199,23 +187,27 @@ body {
   background: #beccd5;
   box-shadow: 20px 20px 60px #7a8388, -20px -20px 60px #ffffff;
   animation: colorAnimation 30s infinite both;
-  p {
-    color: white;
-    text-shadow: 0 0 10px white;
-    font-weight: bold;
-    text-align: center;
-    line-height: 7%;
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    font-size: 14px;
-    height: 7%;
-    // animation: colorTextAnimation 10s infinite both;
-  }
 }
+.button p {
+  color: white;
+  text-shadow: 0 0 10px white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 7%;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  font-size: 14px;
+  height: 7%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 
 .button1 {
   top: 33%;
@@ -230,21 +222,21 @@ body {
   top: 88%;
   width: 35vh;
   height: 7%;
-  p {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    height: 7%;
-    color: rgb(255, 32, 32);
-    animation: none;
-    text-shadow: rgb(143, 4, 4) 0 0 4px;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    line-height: 7%;
-  }
+}
+.button3 p {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 7%;
+  color: #ff2020;
+  animation: none;
+  text-shadow: #8f0404 0 0 4px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 7%;
 }
 
 .placeholderText {
