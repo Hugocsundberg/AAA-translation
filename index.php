@@ -11,7 +11,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./AAA.css">
+    <link rel="stylesheet" href="./dist/AAA.css">
     <meta name="theme-color" content="#FF5700">
 </head>
 
@@ -37,7 +37,7 @@
             <p>V1 Supports A-Z and punctuation</p>
         </div>
     </div>
-    <script src="./AAA.js" async defer></script>
+    <script src="./dist/AAA.js" async defer></script>
 </body>
 
 </html>
