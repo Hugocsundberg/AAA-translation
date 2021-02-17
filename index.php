@@ -18,24 +18,24 @@
 <body>
     <div class="centerContainer">
         <textarea class="aaText"></textarea>
-        <p id="placeholderAa" class="placeholderAa placeholderText">AA AAA aAa aaa a AaAa AAA Aaa a (morse code) here</p>
+        <p id="placeholderAa" class="placeholderAa placeholderText">'A-morse' to normal</p>
         <div id="button1" class="button1 button">
             <p>COPY</p>
         </div>
         <textarea class="normalText"></textarea>
-        <p id="placeholderNormal" class="placeholderNormal placeholderText">Normal text here</p>
+        <p id="placeholderNormal" class="placeholderNormal placeholderText">Normal text to 'A-morse'</p>
         <div id="button2" class="button2 button">
             <p>COPY</p>
         </div>
         <div class="button3 button">
             <p>CLEAR ALL</p>
         </div>
-        <div id="infobutton">
-            <h2>i</h2>
-        </div>
-        <div id="infoscreen">
-            <p>V1 Supports A-Z and punctuation</p>
-        </div>
+    </div>
+    <div id="infobutton">
+        <h2>i</h2>
+    </div>
+    <div id="infoscreen">
+        <p>V1 Supports A-Z and punctuation</p>
     </div>
     <script src="./dist/AAA.js" async defer></script>
 </body>
