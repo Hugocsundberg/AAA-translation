@@ -48,9 +48,7 @@ body {
   border-radius: 30px;
   border: none;
   background: #e6e6e6;
-  box-shadow: 9px 9px 17px #b3b3b3;
-  background: var(--background);
-  box-shadow: var(--box-shadow);
+  box-shadow: 9px 9px 17px #b3b3b3, -9px -9px 17px #ffffff;
 }
 .aaText:focus,
 .normalText:focus {
