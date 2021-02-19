@@ -22,6 +22,9 @@ box-shadow:  var(--box-shadow);
 }
 
 * {
+  &:focus {
+    outline: none;
+  }
   font-family: "Raleway", sans-serif;
 }
 
@@ -42,6 +45,9 @@ box-shadow:  var(--box-shadow);
 
 .aaText,
 .normalText {
+  &:focus {
+    border: 2px solid rgb(0, 162, 255);
+  }
   padding: 20px;
   height: 22%;
   width: 80%;
