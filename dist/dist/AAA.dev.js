@@ -83,7 +83,7 @@ button2.addEventListener("touchstart", function () {
   navigator.vibrate(10);
 });
 button3.addEventListener("touchstart", function () {
-  navigator.vibrate(200);
+  navigator.vibrate(50);
 }); //Desktop
 
 button1.addEventListener("click", function () {
@@ -146,3 +146,12 @@ setInterval(function () {
   updateNormalText();
 }, 1000);
 window.addEventListener("keydown", updatePlaceholders);
+var buttons = document.querySelectorAll('.button');
+buttons.forEach(function (button) {
+  button.addEventListener('click', function (e) {
+    e.target.classList.add('pressed');
+    setTimeout(function () {
+      e.target.classList.remove('pressed');
+    }, 150);
+  });
+});

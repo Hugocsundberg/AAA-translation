@@ -83,7 +83,7 @@ button2.addEventListener("touchstart", () => {
     navigator.vibrate(10)
 })
 button3.addEventListener("touchstart", () => {
-    navigator.vibrate(200)
+    navigator.vibrate(50)
 })
 
 
@@ -160,4 +160,14 @@ setInterval(() => {
 
 window.addEventListener("keydown", updatePlaceholders)
 
+const buttons = document.querySelectorAll('.button')
+buttons.forEach((button)=>{
+    button.addEventListener('click', (e)=>{
+        e.target.classList.add('pressed')
+        setTimeout(() => {
+            e.target.classList.remove('pressed')
+        }, 150);
+    })
+}) 
+    
 
