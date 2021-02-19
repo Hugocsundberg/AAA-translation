@@ -16,7 +16,6 @@ body {
   height: 101vh;
   width: 100vw;
   background: var(--background);
-  box-shadow: var(--box-shadow);
 }
 
 * {
@@ -36,6 +35,7 @@ body {
 }
 .aaText,
 .normalText {
+  -webkit-appearance: none;
   padding: 20px;
   height: 22%;
   width: 80%;
