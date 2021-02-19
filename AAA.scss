@@ -60,8 +60,10 @@ box-shadow:  var(--box-shadow);
   text-align: center;
   border-radius: 30px;
   border: none;
+  background: #e6e6e6;
+  box-shadow:  9px 9px 17px #b3b3b3;
   background: var(--background);
-box-shadow:  var(--box-shadow);
+  box-shadow:  var(--box-shadow);
   // animation: colorAnimation 30s infinite both;
   // overflow: hidden;
 }
